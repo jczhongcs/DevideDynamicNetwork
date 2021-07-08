@@ -4,11 +4,10 @@ from scipy import stats
 from statistics import variance
 # np.set_printoptions(threshold=np.inf)
 
-
-data1 = pd.read_csv(r'E:\科研\uniprot-yeast\无监督\dynamicNet2\person\threshold\Gene_Yeast.csv')
+data1 = pd.read_csv(r'E:\科研\uniprot-yeast\无监督\dynamicNet2\person\threshold\12GeneExpression.csv')
 data2 = pd.read_csv(r'E:\科研\uniprot-yeast\无监督\dynamicNet2\person\threshold\staticNet.csv')
 
-timeData = data1.iloc[:, 1:37].values
+timeData = data1.iloc[:, 1:13].values
 row = data2["row"].values
 col = data2["col"].values
 
